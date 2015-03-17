@@ -22,4 +22,4 @@ On March 17th 2015 (top o' the morning)
 Goals: 
  - Support International characters.
  - Show updating techniques for non kv lang code.
- - Add a third language as a learning exercise ("Inprogess").
+ - Add a third language as a learning exercise.

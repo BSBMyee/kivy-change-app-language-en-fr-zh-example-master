@@ -22,7 +22,7 @@ msgstr "Bonjour tout le monde"
 
 #: lang.kv:17
 msgid "French"
-msgstr "Francais"
+msgstr "Français"
 
 #: lang.kv:21
 msgid "English"

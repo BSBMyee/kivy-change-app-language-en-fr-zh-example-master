@@ -1,37 +1,37 @@
 # Example for an internationalized Kivy app
-# Copyright (C) 2013 Mathieu Virbel
+# Copyright (C) 2015 James Townley
 # This file is distributed under the same license as the Kivy package.
-# Mathieu Virbel <mat@kivy.org>, 2013
+# James Townley <capt.safety@gmail.com>, 2013
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-17 08:39-0600\n"
-"PO-Revision-Date: 2013-08-01 15:36+0200\n"
-"Last-Translator: Mathieu Virbel <mat@kivy.org>\n"
-"Language-Team: Mathieu Virbel <mat@kivy.org>\n"
-"Language: Francais\n"
+"PO-Revision-Date: 2015-03-17 08:31-0600\n"
+"Last-Translator: James Townley <capt.safety@gmail.com>\n"
+"Language-Team: James Townley <capt.safety@gmail.com>\n"
+"Language: Klingon\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: main.py:45
 msgid "Running"
-msgstr "En cours d'exécution"
+msgstr "et ghun"
 
 #: lang.kv:8
 msgid "Hello World"
-msgstr "Bonjour tout le monde"
+msgstr "qo' vIvan"
 
 #: lang.kv:17
 msgid "French"
-msgstr "Français"
+msgstr "French Hol"
 
 #: lang.kv:21
 msgid "English"
-msgstr "Anglais"
+msgstr "English Hol"
 
 #: lang.kv:25
 msgid "Klingon"
-msgstr "Klingon"
+msgstr "tlhIngan"

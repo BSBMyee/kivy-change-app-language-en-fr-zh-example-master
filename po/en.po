@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-17 08:31-0600\n"
+"POT-Creation-Date: 2015-03-17 08:39-0600\n"
 "PO-Revision-Date: 2013-08-01 15:36+0200\n"
 "Last-Translator: Mathieu Virbel <mat@kivy.org>\n"
 "Language-Team: Mathieu Virbel <mat@kivy.org>\n"
@@ -31,3 +31,7 @@ msgstr ""
 #: lang.kv:21
 msgid "English"
 msgstr ""
+
+#: lang.kv:25
+msgid "Klingon"
+msgstr "Klingon"

@@ -8,18 +8,17 @@ import gettext
 class MySpecialLabel(Label):
     def __init__(self, **kwargs):
         self.app = App.get_running_app()
-        self.app.bind(_=self.on_lang)
         super(MySpecialLabel, self).__init__(**kwargs)
+        self.text = self.app._('Running')
 
-    def on_lang(self, instance, value):
-            self.text = self.app._('Running')
 
 class LangApp(App):
     lang = StringProperty('en')
     _ = ObjectProperty(None, allownone=True)
 
-    def build(self):
+    def __init__(self, **kwargs):
         self.switch_lang(self.lang)
+        super(LangApp, self).__init__(**kwargs)
 
     def on_lang(self, instance, lang):
         self.switch_lang(lang)

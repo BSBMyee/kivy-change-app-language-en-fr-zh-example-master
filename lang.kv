@@ -1,11 +1,10 @@
 #:kivy 1.9.0
 
 BoxLayout:
-    _: app._ if app._ != None else str
     orientation: 'vertical'
 
     Label:
-        text: root._('Hello World')
+        text: app._('Hello World')
 
     BoxLayout:
         size_hint_y: None
@@ -14,15 +13,15 @@ BoxLayout:
         padding: '3dp'
 
         Button:
-            text: root._('French')
+            text: app._('French')
             on_release: app.lang = 'fr'
 
         Button:
-            text: root._('English')
+            text: app._('English')
             on_release: app.lang = 'en'
 
         Button:
-            text: root._('Klingon')
+            text: app._('Klingon')
             on_release: app.lang = 'tlh'
 
         MySpecialLabel:

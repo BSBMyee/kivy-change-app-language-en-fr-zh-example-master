@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-17 08:39-0600\n"
+"POT-Creation-Date: 2015-04-22 14:50-0600\n"
 "PO-Revision-Date: 2015-03-17 08:31-0600\n"
 "Last-Translator: James Townley <capt.safety@gmail.com>\n"
 "Language-Team: James Townley <capt.safety@gmail.com>\n"
@@ -16,22 +16,22 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: main.py:45
+#: main.py:23
 msgid "Running"
 msgstr "et ghun"
 
-#: lang.kv:8
+#: lang.kv:15
 msgid "Hello World"
 msgstr "qo' vIvan"
 
-#: lang.kv:17
+#: lang.kv:24
 msgid "French"
 msgstr "French Hol"
 
-#: lang.kv:21
+#: lang.kv:28
 msgid "English"
 msgstr "English Hol"
 
-#: lang.kv:25
+#: lang.kv:33
 msgid "Klingon"
 msgstr "tlhIngan"

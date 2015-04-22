@@ -1,16 +1,19 @@
 from kivy.app import App
 from kivy.properties import StringProperty, ObjectProperty
 from kivy.uix.label import Label
+from kivy.app import App
+
 from os.path import join, dirname
 import gettext
 
 
-class MySpecialLabel(Label):
-    def __init__(self, **kwargs):
-        self.app = App.get_running_app()
-        super(MySpecialLabel, self).__init__(**kwargs)
-        self.text = self.app._('Running')
+class I18NLabel(Label):
+    source_text = StringProperty('')
 
+class MySpecialLabel(I18NLabel):
+    def __init__(self, **kwargs):
+        super(MySpecialLabel, self).__init__(**kwargs)
+        self.source_text = 'Running'
 
 class LangApp(App):
     lang = StringProperty('en')

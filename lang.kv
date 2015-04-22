@@ -1,10 +1,13 @@
 #:kivy 1.9.0
 
+<I18NLabel>:
+    text: app._(self.source_text)
+
 BoxLayout:
     orientation: 'vertical'
 
-    Label:
-        text: app._('Hello World')
+    I18NLabel:
+        source_text: 'Hello World'
 
     BoxLayout:
         size_hint_y: None
@@ -13,16 +16,20 @@ BoxLayout:
         padding: '3dp'
 
         Button:
-            text: app._('French')
+            text: app._(self.source_text)
+            source_text: 'French'
             on_release: app.lang = 'fr'
 
         Button:
-            text: app._('English')
+            text: app._(self.source_text)
+            source_text: 'English'
             on_release: app.lang = 'en'
 
         Button:
-            text: app._('Klingon')
+            text: app._(self.source_text)
+            source_text: 'Klingon'
             on_release: app.lang = 'tlh'
 
         MySpecialLabel:
             color: [1.0, 0.5, 0.5, 1.0]
+

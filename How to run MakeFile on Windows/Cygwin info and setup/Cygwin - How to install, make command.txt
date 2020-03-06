@@ -24,4 +24,5 @@ make
 
 
 Note, if one of your folders has a space in the name, escape a space by writing it with a backslash (Notice "Box Sync"):
-cd C:/Users/username/Desktop/Box\ Sync/kivy-change-app--language-en-fr-zh-example-master
+cd C:\Users\yeebr\Desktop\Box\ Sync\APP\Kivy\Examples\kivy-change-app-language-en-fr-zh-example-master
+make

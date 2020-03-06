@@ -1,18 +1,25 @@
 #:kivy 1.9.0
 #:import _ __main__._
 
+
 <I18NLabel>:
     text: app.translation(self.source_text)
 
-<I18NButton@Button>:
+<I18NButton@Button>:  # Dynamic Classes, performs these actions when a Button is pressed
     source_text: ''
     text: app.translation(self.source_text)
+    font_name: app.app_font_namey
+
+<I18NLabel@Button>:  # Dynamic Classes, performs these actions when a Button is pressed
+    font_name: app.app_font_namey
 
 BoxLayout:
     orientation: 'vertical'
-
     I18NLabel:
         source_text: _('Hello World')
+
+    I18NLabel:
+        source_text: _('How are you?')
 
     BoxLayout:
         size_hint_y: None
@@ -28,10 +35,10 @@ BoxLayout:
             source_text: _('English')
             on_release: app.lang = 'en'
 
-        Button:
-            text: app.translation(self.source_text)
-            source_text: _('Klingon')
-            on_release: app.lang = 'tlh'
+
+        I18NButton:
+            source_text: _('Chinese')
+            on_release: app.lang = 'zh_hant'
 
         MySpecialLabel:
             color: [1.0, 0.5, 0.5, 1.0]

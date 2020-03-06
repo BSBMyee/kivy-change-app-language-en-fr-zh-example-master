@@ -1,0 +1,27 @@
+【How to Install Cygwin32!】Cygwin is a command-prompt-like terminal window that runs on bash script, the Linux script.  You'll be able to type in and use the "main" command in this special terminal window.
+Run the installer from the official website: https://www.cygwin.com/setup-x86_64.exe
+For more details, check out the 2 pictures!
+Step by step:
+
+1) View: Category
+2) All: Uninstall
+3) Sync
+4) Search: make
+5) Devel: 
+Install all these. "Keep" just means it was already installed.  Double-click the "Keep" part to make it go to the latest version.
+
+NOTE: Everything else should be "Skip" or "Uninstall".
+NOTE: There should be an icon on your desktop, this is the "Cygwin64 Terminal".  It runs on bash script, the Linux script.
+
+If you get an error message, you probably need to install "gettexxt".  The picture entitled, "gettext-Cygwin Setup - Select Packages.png" will help you with that.
+
+【Make Command】
+Note: GO TO DIRECTORY/THE FOLDER WHICH CONTAINS THE MakeFile file.  Use the "make" command.
+Remember, Ctrl+V doesn't work in Cygwin; instead, you can right-click to paste. Use the following command:
+
+cd C:/Users/username/Desktop/....../kivy-change-app--language-en-fr-zh-example-master
+make
+
+
+Note, if one of your folders has a space in the name, escape a space by writing it with a backslash (Notice "Box Sync"):
+cd C:/Users/username/Desktop/Box\ Sync/kivy-change-app--language-en-fr-zh-example-master

@@ -5,6 +5,8 @@ from kivy.uix.label import Label
 from os.path import join, dirname
 import gettext
 
+from constants import *
+
 
 def _(string):
     '''This is just so we can use the default gettext format'''
@@ -25,19 +27,26 @@ class MySpecialLabel(I18NLabel):
 
 class LangApp(App):
     lang = StringProperty('en')
+    app_font_namey = StringProperty(FONT_EN)  # make a StringProperty
+
     translation = ObjectProperty(None, allownone=True)
 
     def __init__(self, **kwargs):
         self.switch_lang(self.lang)
         super(LangApp, self).__init__(**kwargs)
 
-    def on_lang(self, instance, lang):
+    def on_lang(self, instance, lang):  # Callback gets called when self.lang changes.
         self.switch_lang(lang)
 
     def switch_lang(self, lang):
         locale_dir = join(dirname(__file__), 'data', 'locales')
         locales = gettext.translation('langapp', locale_dir, languages=[self.lang])
-        self.translation = locales.ugettext
+        self.translation = locales.gettext
 
+        # Set font if Chinese.
+        if lang == 'zh_hant':
+            self.app_font_namey = FONT_ZH_HANT
+        else:
+            self.app_font_namey = FONT_EN
 
 LangApp().run()
